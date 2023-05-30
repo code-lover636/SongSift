@@ -1,0 +1,21 @@
+
+
+.home-page {
+    height: 100vh;
+    background: url("../assets/gradient.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::-webkit-scrollbar{
+      display: none;
+  };
+  .home-page-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1em 1em 0em;
+    padding-left: 0em;
+    gap: 1em;
+  }
+}

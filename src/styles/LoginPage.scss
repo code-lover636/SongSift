@@ -1,0 +1,39 @@
+@import './global.scss';
+
+.login-page{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #131313;
+}
+
+.login-form {
+    background: #131313;
+    box-shadow:  5px 5px 6px #090909,
+                 -5px -5px 6px #1d1d1d;
+    padding: 2rem;
+    border-radius: 5px;
+    min-width: 300px;
+    margin: 0 auto;
+    &__title {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+    .login-form__input{
+      background-color: white;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+      padding: .5em 1em;
+      cursor: pointer;
+      img{
+        width: 24px;
+        height: 24px;
+      }
+
+    }
+
+}

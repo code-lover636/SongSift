@@ -1,0 +1,75 @@
+@import './global.scss';
+
+.navbar {
+    background-color: rgba(0, 0, 0, .8);
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0em;
+    .logo{
+      width: 90px;
+      height: 90px;
+      margin-top: 1em;
+    }
+    
+  
+    &__links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3em;
+      justify-content: space-between;
+      cursor: pointer;
+      &-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: $font-color;
+        text-decoration: none;
+        font-size: 1.15rem;
+        font-weight: 700;
+        width: 100%;
+        padding: .25em 2.5em;
+        border-right: 5px solid transparent;
+        &:hover{
+            color: $primary-color;
+        }
+          & .navbar__links-icon {
+            margin-right: 0.5rem;
+            width: 20px;
+            height: 20px;
+          }
+      }
+          .active{
+          color: $primary-color;
+          border-right: 5px solid $primary-color;
+          width: 100%;
+          & .navbar__links-icon {
+            color: $primary-color;
+          }
+        }
+    }
+  
+    &__logout {
+      text-align: center;
+      &-button {
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        & .navbar__logout-icon {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  

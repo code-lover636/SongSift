@@ -1,0 +1,49 @@
+@import './global.scss';
+
+.feature-screen{
+    width: 100%;
+    height: 100%;
+    background-color:  $secondary-background;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 2em 5em;
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    &::-webkit-scrollbar{
+      display: none;
+  };
+  .searchbar{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: felx-start;
+    gap: 1em;
+    .icon{
+      color: white;
+      width: 24px;
+      height: 24px;
+    }
+    input{
+      height: 100%;
+      width: 100%;
+      font-size: 1.2rem;
+      border: none;
+      border-bottom: 2px solid white;
+      padding-bottom: .3em;
+      background-color: transparent;
+      outline: none;
+      color: white;
+    }
+  }
+  ul{
+    padding: 2em 2em;
+    margin-top: 3em;
+    border-radius: 10px;
+    background-color: $secondary-background;
+    li{
+      color: white;
+    }
+  }
+}
